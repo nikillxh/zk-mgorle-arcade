@@ -1,0 +1,32 @@
+### **How the Game Works**
+
+1. **Matchmaking**:
+   - When the user enters the Checkers page, the app checks whether the wallet is installed and connected.
+   - If the wallet is connected, the app enters the matchmaking state.
+   - The player is added to the match queue, and the app continuously checks for available games.
+   - If a match is found, the game moves to the **Match Registration** state.
+
+2. **Starting a Game**:
+   - The `useStartGame` hook is responsible for starting the game. It:
+     - Registers the player with the game using a transaction to the blockchain.
+     - Moves the game state to **Match Registration** once the registration is successful.
+     - Initializes the game logic and prepares the game board.
+
+3. **Game Flow**:
+   - **Current Player Turn**: Once the game starts, the player takes their turn by moving pieces on the board. When the player chooses a move, the app processes the move through the `useOnMoveChosen` hook and sends it to the blockchain.
+   - **Opponent Turn**: After the current player moves, the game waits for the opponent to make their move. The app handles the transition to the opponent's turn.
+   - **Opponent Timeout**: If the opponent doesn't make a move within the defined block height, the game transitions to the opponent timeout state, allowing the player to prove the opponent’s timeout.
+   
+4. **Winning and Losing**:
+   - The game is won by either capturing all the opponent's pieces or blocking them from making a valid move.
+   - If the player wins, the state transitions to **Won** and displays a success message.
+   - If the player loses, the state transitions to **Lost**.
+
+5. **Blockchain Interaction**:
+   - The app leverages the `zknoid-chain-dev` library to interact with the blockchain for game transactions.
+   - **Transactions**: Transactions are sent for game-related actions like starting the game, making a move, and proving an opponent's timeout.
+   - **Game Logging**: Game events (such as starting the game or making a move) are logged on the blockchain using the `api.logging.logGameStarted` mutation.
+
+6. **UI and Feedback**:
+   - The app uses `GamePage` and `PvPGameView` components to display the game status, including whether it’s the player’s turn, the opponent’s turn, and whether the player has won or lost.
+   - Toast notifications are used to provide feedback to the player, such as "You won!" when the game ends.
