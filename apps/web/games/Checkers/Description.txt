@@ -23,7 +23,6 @@
    - If the player loses, the state transitions to **Lost**.
 
 5. **Blockchain Interaction**:
-   - The app leverages the `zknoid-chain-dev` library to interact with the blockchain for game transactions.
    - **Transactions**: Transactions are sent for game-related actions like starting the game, making a move, and proving an opponent's timeout.
    - **Game Logging**: Game events (such as starting the game or making a move) are logged on the blockchain using the `api.logging.logGameStarted` mutation.
 
