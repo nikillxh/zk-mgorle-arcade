@@ -1,0 +1,40 @@
+#### **Game Features:**
+1. **Single-Player & Multiplayer Support**:  
+   - One player hides a number, and another player attempts to guess it.  
+
+2. **Blockchain-Based (Previously Mina, Now Placeholder for Future Integration)**:  
+   - Originally designed to run on the Mina blockchain (with transactions for hiding and guessing numbers).  
+   - Now prepared for integration with a different blockchain.  
+
+3. **Interactive UI with Enhanced Design**:  
+   - Uses **Framer Motion** for animations.  
+   - Improved layout with **dark theme, rounded borders, and better spacing** for readability.  
+
+4. **Real-Time Game State Management**:  
+   - Tracks **hidden number** and **player scores** dynamically.  
+   - Updates the UI based on the game status (hiding or guessing phase).  
+
+5. **Notifications for Game Events**:  
+   - **Success Notification**: When a player guesses the correct number.  
+   - **Error Notification**: When the guess is incorrect.  
+
+6. **Responsive & Mobile-Friendly**:  
+   - Designed to work across **desktop and mobile devices**.  
+   - Adjusts layout dynamically for different screen sizes.  
+
+---
+
+#### **How the Game is Played:**
+1. **Game Setup**:  
+   - One player enters a number to "hide."  
+   - The game hashes the number (originally using Poseidon hash on Mina blockchain).  
+   - The second player then tries to guess the hidden number.  
+
+2. **Gameplay Flow**:  
+   - If the guessed number matches the hidden number, the player wins.  
+   - If incorrect, the game informs the player and allows another attempt.  
+   - The UI updates dynamically to reflect the game state.  
+
+3. **Score Tracking**:  
+   - Player scores are updated based on correct guesses.  
+   - Originally, scores were stored on the Mina blockchain (now a placeholder for a new blockchain).  
