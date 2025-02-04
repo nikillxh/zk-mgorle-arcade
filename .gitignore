@@ -1,0 +1,12 @@
+/node_modules
+/*.log
+/build
+/.vscode
+/.env
+/data/
+/package-lock.json
+/kms-fhe-keys
+/network-fhe-keys
+/docker/.env.docker
+/docker/docker-compose-full.yml
+

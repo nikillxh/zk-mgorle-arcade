@@ -1,0 +1,36 @@
+{
+  "name": "hands-on-fhevm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "fund": "node utils/fund-address.js",
+    "core": "node index.js",
+    "deploy": "node contract-deploy.js",
+    "test": "node contract-interact.js",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.1"
+  },
+  "dependencies": {
+    "@ethereumjs/wallet": "^2.0.4",
+    "bip39": "^3.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "fhevm": "^0.5.9",
+    "fhevmjs": "^0.5.8",
+    "solc": "^0.8.28",
+    "winston": "^3.17.0"
+  }
+}
