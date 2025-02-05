@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: #141414;
+  --foreground-rgb: #f9f8f4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-rgb: #141414;
+    --foreground-rgb: #f9f8f4;
+  }
+}
+
+body {
+  color: var(--foreground-rgb);
+  background-color: var(--background-rgb);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  font-family: var(--museo-slab);
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.banner-mask {
+  @media (min-width: 1024px) {
+    mask-image: url(/image/section1/banner-mask.svg);
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+
+    background-image: url(/image/section1/banner-mask.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.masked-event-card {
+  mask-image: url(/image/section2/event-box.svg);
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+}
+
+@layer base {
+  input[type='number'].appearance-none::-webkit-inner-spin-button,
+  input[type='number'].appearance-none::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'].appearance-none {
+    -moz-appearance: textfield;
+  }
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type='search']::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
