@@ -3,7 +3,9 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
-import { FiShoppingBag } from "react-icons/fi";
+// import { FiShoppingBag } from "react-icons/fi";
+import { IoGameControllerOutline } from "react-icons/io5";
+
 
 const Menu = [
   {
@@ -57,7 +59,7 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-xl items-center flex gap-1">
-              <FiShoppingBag size="30" />
+              <IoGameControllerOutline size="40" />
               zk-arcade
             </a>
           </div>
