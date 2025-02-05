@@ -1,8 +1,8 @@
 # zk-mgorle-arcade game on AirChain FHEVM ecosystem
 
 ## Some useful variables
-NETWORK_URL=http://localhost:8545/
-GATEWAY_URL=http://localhost:7077
+- NETWORK_URL=http://localhost:8545/
+- GATEWAY_URL=http://localhost:7077
 
 
 ## Prereq
@@ -41,7 +41,12 @@ npm run deploy
 npm run core
 ```
 
-- To stop docker container
+### To check if everything is working fine
+```bash
+curl -X POST --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":1}' -H "Content-Type: application/json" http://localhost:8545/
+```
+
+### To stop docker container [*Important*]
 ```bash
 make stop-full
 ```
