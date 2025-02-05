@@ -11,32 +11,39 @@
 - go
 - docker compose plugin
 
-## How to run 
+## How to run frontend
+```bash
+npm install
+npm run dev
+```
 
+## How to run FHEVM using Docker
+
+1. 
 ```bash
 cd FHEVM
 ```
-
+2.
 ```bash
 npm install
 ```
-
+3.
 ```bash
 cp .env.example .env
 ```
-
+4.
 ```bash
 make run-full
 ```
-
+5.
 ```bash
 npm run fund
 ```
-
+6.
 ```bash
 npm run deploy
 ```
-
+7.
 ```bash
 npm run core
 ```
