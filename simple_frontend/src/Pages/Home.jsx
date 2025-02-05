@@ -4,6 +4,7 @@ import GlobalApi from '../Servies.js/GlobalApi'
 import Slider from '../Componets/Slider'
 import PopularGameList from '../Componets/PopularGameList'
 import TrendingGameList from '../Componets/TrendingGameList'
+import PlayableGame from '../Componets/PlayableGame'
 
 function Home() {
     const [gameList,setGameList]=useState([])
@@ -30,21 +31,21 @@ function Home() {
       })
       }
      
-        
-      
-      
     }
   return (
     <div className='grid grid-cols-4 p-8'>
-        <div className='hidden md:flex'><SideNavGenreList 
-        selectedGenreId={(genreId)=>getGameList(genreId)} /></div>
-       {gameList?.length&&gameListByGenre?.length>0    ? 
-       <div className='md:col-span-3 col-span-4 px-3'>
+        <div className='hidden md:flex'>
+          <SideNavGenreList selectedGenreId={(genreId)=>getGameList(genreId)} />
+          <PlayableGame />
+          <span className='text-white '>Hi everyone </span>
+        </div>
+       <div className='md:col-span-4 col-span-4 px-3'>
+            <PlayableGame />
+            <span className='text-white'>Hi everyone </span>
             <Slider game={gameListByGenre[0]} />
             <TrendingGameList gameList={gameList}/>
             <PopularGameList gameList={gameListByGenre} />
         </div>
-        :null}
     </div>
   )
 }

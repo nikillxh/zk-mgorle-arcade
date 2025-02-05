@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { banner_image } from '../../utils/images';
 import { FaGamepad } from 'react-icons/fa';
+import PlayableGame from '../../Componets/PlayableGame'
 
 const Banner = () => {
   return (
@@ -14,6 +15,7 @@ const Banner = () => {
         <button type="button" className='banner-btn d-flex align-items-center'>
           <span className='btn-icon'>
             <FaGamepad className='text-white' size = { 25 } />
+            <PlayableGame />
           </span>
           <span className='btn-text text-green'>play now</span>
         </button>

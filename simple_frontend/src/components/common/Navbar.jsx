@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className='container w-100'>
         <div className='navbar-content'>
           <div className='brand-and-toggler d-flex align-items-center justify-content-between'>
-            <Link to = "/" className="navbar-brand text-white text-uppercase no-wrap">cool <span>games</span></Link>
+            <Link to = "/" className="navbar-brand text-white text-uppercase no-wrap">zk-<span>arcade</span></Link>
             <button type='button' className='navbar-show-btn text-white' onClick={() => dispatch(setSidebarOn())}>
               <HiOutlineMenuAlt3 size = { 25 } />
             </button>
@@ -26,44 +26,18 @@ const Navbar = () => {
               <MdClose size = { 25 } />
             </button>
 
-            <ul className='navbar-nav'>
+            <ul className='navbar-nav ml-16'>
               <li className='nav-item'>
                 <Link to = "/" className='nav-link'>home</Link>
               </li>
               <li className='nav-item'>
-                <Link to = "/creators" className='nav-link'>creators</Link>
+                <Link to = "/events" className='nav-link'>events</Link>
               </li>
               <li className='nav-item'>
-                <Link to = "/stores" className='nav-link'>stores</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to = "/games" className='nav-link'>games</Link>
+                <Link to = "/faq" className='nav-link'>FAQ&Support</Link>
               </li>
             </ul>
-
-            <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>
-              <li className='text-uppercase fw-7 w-100 connect-text mb-2'>connect</li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsRssFill />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsSteam size = { 18 } />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsTwitch size = { 18 } />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsYoutube size = { 19 } />
-                </Link>
-              </li>
-            </ul>
+            <button className='text-uppercase w-100 mr-12 text-white'>wallet connect </button>
           </div>
         </div>
       </div>

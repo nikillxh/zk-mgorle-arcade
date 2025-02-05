@@ -13,7 +13,6 @@ function Slider({game}) {
         <button className='bg-blue-700 text-white px-2 p-1'>Get Now</button>
       </div>
       <img src={game.background_image} className=' h-[170px] md:h-[320px] w-full object-cover rounded-xl'/>
-     
     </div>
   )
 }
