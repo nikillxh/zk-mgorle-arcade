@@ -1,12 +1,14 @@
-/node_modules
+**/node_modules
 /*.log
-/build
+**/build
 /.vscode
-/.env
+**/.env
+!**/.env.example
 /data/
-/package-lock.json
+**/package-lock.json
 /kms-fhe-keys
 /network-fhe-keys
 /docker/.env.docker
 /docker/docker-compose-full.yml
+frontend-only
 
