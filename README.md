@@ -13,6 +13,7 @@
 
 ## How to run frontend
 ```bash
+cd more-simple-frontend
 npm install
 npm run dev
 ```
