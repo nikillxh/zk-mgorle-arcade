@@ -1,0 +1,81 @@
+18:12:57 info: [1m========== FUNDING ADDRESS DERIVED FROM MNEMNONIC ==========[0m
+18:12:57 info: Funding address: 0xa5e1defb98efe38ebb2d958cee052410247f4c80
+18:13:06 info: Funding address: 0xfcefe53c7012a075b8a711df391100d9c431c468
+18:13:15 info: Funding address: 0xa44366baa26296c1409ad1e284264212029f02f1
+18:13:23 info: Funding address: 0xc1d91b49a1b3d1324e93f86778c44a03f1063f1b
+18:13:31 info: Funding address: 0x305f1f471e9bacff2b3549f9601f9a4beafc94e1
+18:13:40 info: Funding address: 0x8b8f5091f8b9817ef69cfc1e8b2f721baff60df4
+18:13:48 info: Funding address: 0x03734276e8f8ab253ff4295e66228dac936ff5b8
+18:13:57 info: Funding address: 0x9fe8958a2920985ac7ab8d320fdfab310135a05b
+18:14:05 info: Funding address: 0x466f26442dd182c9a1b018cd06671f9791dde8ef
+18:14:14 info: Funding address: 0xc45994e4098271c3140117ebd5c74c70dd56d9cd
+18:14:22 info: [1m✅ All addresses funded successfully![0m
+18:14:35 info: [1m========== PRECOMPUTING CORE ADDRESSES ==========[0m
+18:14:35 info: ACL_CONTRACT_ADDRESS: 0x8Fdb26641d14a80FCCBE87BF455338Dd9C539a50
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/.env.acl
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/ACLAddress.sol
+18:14:35 info: FHEVM_COPROCESSOR_ADDRESS: 0x74c085A069fafD4f264B5200847EdB1ade82B3C0
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/.env.exec
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/FHEVMCoprocessorAddress.sol
+18:14:35 info: KMS_VERIFIER_CONTRACT_ADDRESS: 0x4e142887e3Dc6e414a9b260a1034D20C9B4Eb11F
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/.env.kmsverifier
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/lib/KMSVerifierAddress.sol
+18:14:35 info: GATEWAY_CONTRACT_PREDEPLOY_ADDRESS: 0xc1D733116990ce3D9e54F9eCf48a1cdD441Af4f9
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/gateway/lib/.env.gateway
+18:14:35 info: File written: /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contracts/core/gateway/lib/PredeployAddress.sol
+18:14:35 info: [1m✅ Precomputing addresses successful[0m
+18:14:35 info: [1m========== CORE ADDRESSES ==========[0m
+18:14:35 info: Compiling contract: core/lib/ACL.sol
+18:14:35 info: ABI written to /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/build/ACL.json
+18:14:35 info: ACL.sol deployed at address: 0x8Fdb26641d14a80FCCBE87BF455338Dd9C539a50
+18:14:35 info: Compiling contract: core/lib/TFHEExecutor.sol
+18:14:35 info: ABI written to /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/build/TFHEExecutor.json
+18:14:35 info: TFHEExecutor.sol deployed at address: 0x74c085A069fafD4f264B5200847EdB1ade82B3C0
+18:14:35 info: Compiling contract: core/lib/KMSVerifier.sol
+18:14:35 info: ABI written to /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/build/KMSVerifier.json
+18:14:36 info: KMSVerifier.sol deployed at address: 0x4e142887e3Dc6e414a9b260a1034D20C9B4Eb11F
+18:14:36 info: Compiling contract: core/gateway/GatewayContract.sol
+18:14:36 info: ABI written to /home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/build/GatewayContract.json
+18:14:36 info: GatewayContract.sol deployed at address: 0xc1D733116990ce3D9e54F9eCf48a1cdD441Af4f9
+18:14:36 info: [1m✅ Core Contracts deployed successfully[0m
+18:14:38 info: [1m========== GATEWAY RELAYER ==========[0m
+18:35:49 info: [1m========== DEPLOYING USER CONTRACT ==========[0m
+18:35:49 info: Compiling contract: EncryptedERC20.sol
+18:35:49 error: Error compiling contract EncryptedERC20.sol: Solidity compilation error: ParserError: Expected ';' but got '='
+ --> core/gateway/GatewayCaller.sol:5:25:
+  |
+5 | import "../lib/TFHE.sol"=
+  |                         ^
+
+
+18:35:49 error: 
+Deployment failed: Solidity compilation error: ParserError: Expected ';' but got '='
+ --> core/gateway/GatewayCaller.sol:5:25:
+  |
+5 | import "../lib/TFHE.sol"=
+  |                         ^
+
+
+18:35:49 error: ❌ Deployment failed: Solidity compilation error: ParserError: Expected ';' but got '='
+ --> core/gateway/GatewayCaller.sol:5:25:
+  |
+5 | import "../lib/TFHE.sol"=
+  |                         ^
+
+ Error: Solidity compilation error: ParserError: Expected ';' but got '='
+ --> core/gateway/GatewayCaller.sol:5:25:
+  |
+5 | import "../lib/TFHE.sol"=
+  |                         ^
+
+
+    at file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/src/compile.js:72:13
+    at Array.forEach (<anonymous>)
+    at handleCompilationErrors (file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/src/compile.js:70:10)
+    at getCompiledContract (file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/src/compile.js:105:7)
+    at deployContract (file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/src/deploy.js:12:32)
+    at deployAndSave (file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contract-deploy.js:16:32)
+    at file:///home/arnav-panjla/Desktop/AirChain_hackathon/zk-mgorle-arcade/FHEVM/contract-deploy.js:34:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:272:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:583:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:98:5)
