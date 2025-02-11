@@ -1,15 +1,64 @@
-**/node_modules
-/*.log
-**/build
-/.vscode
-**/.env
-!**/.env.example
-/data/
-**/package-lock.json
-/kms-fhe-keys
-/network-fhe-keys
-/docker/.env.docker
-/docker/docker-compose-full.yml
-frontend-only
-simple-frontend
+# some frontend 
+/.env
+/package-lock.json
+# Node.js
+/node_modules/
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+
+# Next.js
+/.next/
+/out/
+/.vercel/
+
+# Vite
+/dist/
+/.vite/
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+
+# Logs
+logs
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+/.vscode/
+/.idea/
+/*.swp
+*.swo
+
+# Sanity Studio
+.sanity/
+/.sanity-studio
+
+# Tailwind CSS
+tailwind.config.js
+tailwind.config.ts
+
+# Other build artifacts
+/build/
+/public/_next/
+
+# Hardhat
+artifacts/
+/cache/
+
+# Backend related
+/ignition/
+/contracts/
+/scripts/
+/test/
+
+# IDEs and other tools
+*.sublime-project
+*.sublime-workspace
+
 
