@@ -42,6 +42,13 @@ const GamesData = [
     description:
       "Test your luck with our number guessing game. Pick numbers and win big prizes!",
   },
+  {
+    id: 6,
+    img: LotteryImg,
+    title: "RPS",
+    description:
+      "Rock, Paper, Scissors, Shoot! Play the classic game and challenge your friends.",
+  }
 
 ];
 

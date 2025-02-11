@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/Home.jsx", "src/pages/GameTileville.jsx", "src/pages/GameNGuess.jsx", "src/pages/GameLottery.jsx", "src/pages/GameDetails.jsx", "src/pages/GameChess.jsx", "src/pages/GameCheckers.jsx", "src/pages/NotFound.jsx", "src/routes/Router.jsx"],
   "exclude": ["node_modules"]
 }
