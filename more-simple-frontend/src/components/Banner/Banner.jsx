@@ -10,7 +10,8 @@ const Banner = () => {
     { username: "Nikillxh", github: "https://avatars.githubusercontent.com/u/147069367?v=4" },
     { username: "Arnav-panjla", github: "https://avatars.githubusercontent.com/u/146819303?v=4" },
     { username: "Akshat-Shandilya", github: "https://avatars.githubusercontent.com/u/166644996?v=4" },
-    { username: "reeshabh-k", github: "https://avatars.githubusercontent.com/u/161019958?v=4" }
+    { username: "reeshabh-k", github: "https://avatars.githubusercontent.com/u/161019958?v=4" },
+    { username: "TREX4096", github: "https://avatars.githubusercontent.com/u/161677713?v=4" }
   ];
 
 
