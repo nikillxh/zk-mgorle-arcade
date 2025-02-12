@@ -4,22 +4,24 @@ import CheckersImg from "../../assets/games/checkers.webp";
 import TilevilleImg from "../../assets/games/tileville.png";
 import LotteryImg from "../../assets/games/cat-wife.svg";
 import ChessImg from "../../assets/games/chess.png";
+import NGuessImg from "../../assets/games/nguess.png";
+import RPSImg from "../../assets/games/rps.png";
 import { FaStar } from "react-icons/fa";
 
 const GamesData = [
   {
     id: 1,
-    img: CheckersImg,
-    title: "Checkers",
+    img: NGuessImg,
+    title: "NGuess",
     description:
-      "A classic game of strategy. Capture or block your opponent’s pieces and become the champion!",
+      "Test your luck with our number guessing game. Pick numbers and win big prizes!",
   },
   {
     id: 2,
-    img: TilevilleImg,
-    title: "Tileville",
+    img: RPSImg,
+    title: "RPS",
     description:
-      "Solve engaging tile puzzles, connect paths, and challenge your brain with fun levels.",
+      "Rock, Paper, Scissors, Shoot! Play the classic game and challenge your friends.",
   },
   {
     id: 3,
@@ -37,18 +39,19 @@ const GamesData = [
   },
   {
     id: 5,
-    img: LotteryImg,
-    title: "NGuess",
+    img: CheckersImg,
+    title: "Checkers",
     description:
-      "Test your luck with our number guessing game. Pick numbers and win big prizes!",
+      "A classic game of strategy. Capture or block your opponent’s pieces and become the champion!",
   },
   {
     id: 6,
-    img: LotteryImg,
-    title: "RPS",
+    img: TilevilleImg,
+    title: "Tileville",
     description:
-      "Rock, Paper, Scissors, Shoot! Play the classic game and challenge your friends.",
+      "Solve engaging tile puzzles, connect paths, and challenge your brain with fun levels.",
   }
+  
 
 ];
 

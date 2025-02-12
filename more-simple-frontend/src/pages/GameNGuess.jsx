@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import WelcomeImg from "../assets/games/guessing-game.svg";
+import ThinkingImg from "../assets/games/thinking.png";
+import WinnerImg from "../assets/games/winner.png";
+import GameOverImg from "../assets/games/game-over.png";
 
 const GameNGuess = () => {
   const [range, setRange] = useState(10);
@@ -55,25 +59,32 @@ const GameNGuess = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
+    <div className="flex flex-col items-center justify-center h-[86.3vh] bg-gray-900 text-white p-6">
       {!gameStarted ? (
         <div className="flex flex-col items-center gap-6">
           <h1 className="text-4xl font-bold">🎯 Number Guessing Game</h1>
-          <img src="/guessing-game.png" alt="Guessing Game" className="w-60" />
-          <label className="text-lg">Enter max range:</label>
-          <input
-            type="number"
-            value={range}
-            onChange={(e) => setRange(parseInt(e.target.value, 10))}
-            className="w-32 text-center p-2 border rounded-lg text-black"
-          />
-          <label className="text-lg">Enter number of tries:</label>
-          <input
-            type="number"
-            value={tries}
-            onChange={(e) => setTries(parseInt(e.target.value, 10))}
-            className="w-32 text-center p-2 border rounded-lg text-black"
-          />
+          <img src={WelcomeImg} alt="Guessing Game" className="w-60" />
+          <div className="flex space-x-8">
+          <div className="flex flex-col items-start">
+            <label className="text-lg">Enter max range:</label>
+            <input
+              type="number"
+              value={range}
+              onChange={(e) => setRange(parseInt(e.target.value, 10))}
+              className="w-32 text-center p-2 border rounded-lg text-black"
+            />
+          </div>
+          
+          <div className="flex flex-col items-start">
+            <label className="text-lg">Enter number of tries:</label>
+            <input
+              type="number"
+              value={tries}
+              onChange={(e) => setTries(parseInt(e.target.value, 10))}
+              className="w-32 text-center p-2 border rounded-lg text-black"
+            />
+          </div>
+          </div>
           <button
             onClick={startGame}
             className="px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition"
@@ -87,7 +98,7 @@ const GameNGuess = () => {
             <div className="flex flex-col items-center gap-6">
               <h1 className="text-3xl font-bold">🎯 Number Guessing Game</h1>
               <p className="text-lg">{message}</p>
-              <img src="/thinking.png" alt="Thinking" className="w-48" />
+              <img src={ThinkingImg} alt="Thinking" className="w-48" />
               <input
                 type="number"
                 value={guess}
@@ -107,7 +118,7 @@ const GameNGuess = () => {
             <div className="flex flex-col items-center gap-6">
               <h1 className="text-3xl font-bold">🎉 Game Over!</h1>
               <img
-                src={correctGuesses > tries / 2 ? "/winner.png" : "/game-over.png"}
+                src={correctGuesses > tries / 2 ? WinnerImg : GameOverImg}
                 alt="Game Over"
                 className="w-60"
               />
